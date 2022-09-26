@@ -1,0 +1,354 @@
+.form{
+    margin:0px;
+    margin-top: 0px;
+    padding: 2%;
+    background-image: url("https://c.wallhere.com/photos/fd/05/1920x1200_px_Pac_Man_video_games-665150.jpg!d");
+    min-height: 100vh;
+    background-color: rgb(0, 195, 255);
+    background-attachment: fixed;
+    border: 2px solid transparent;
+    background-size:     cover;                      
+    background-repeat:   no-repeat;
+    background-position: center center;
+}
+
+.inputs_create{
+	display: grid;
+	justify-content: space-around;
+}
+
+.rating_create{
+	display: grid;
+	justify-content: space-around;
+	margin: 5px;
+}
+
+.release_create{
+	display:grid;
+	justify-content: space-around;
+	margin: 5px;
+}
+
+.link_detail{
+	cursor: auto;
+}
+
+.desc_create{
+	/* display: grid;
+	width: 10px; */
+	display:grid;
+	justify-content: space-around;
+	margin: 5px;
+}
+
+.img_create{
+	margin: 5px;
+}
+
+
+.home_detail{
+  padding: 2em;
+  height: 180px;
+  width: 300px;
+  background-image: url(https://static.pullandbear.net/2/static2/itxwebstandard/images/editorial/2018/licencias/logosPeque/VideoGames.png);
+  transition: .4s;
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border-color: transparent;
+  cursor: pointer
+}
+.btn_create{
+  background: crimson;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  font-size: 15px;
+  padding: 20px;
+  border-radius: 30px;
+  border-color: transparent;
+  font-family: 'Inconsolata', monospace;
+  text-decoration: none;
+  color: white;
+  box-shadow: inset -4px -4px 0px 0px rgb(177, 15, 47);
+  /* width: 50px; */
+  cursor: pointer;
+}
+
+.btn_create_disabled{
+  background: transparent;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  font-size: 15px;
+  padding: 20px;
+  border-radius: 30px;
+  border-color: transparent;
+  font-family: 'Inconsolata', monospace;
+  text-decoration: none;
+  color: transparent;
+  /* width: 50px; */
+}
+
+
+.err_created{
+  color: rgb(248, 232, 0);
+  font-family: 'Courier New', Courier, monospace;
+  text-shadow: 1px 1px 1px rgb(241, 9, 9);
+  display: inline-block;
+}
+  
+
+.img_input{
+  /* background: crimson; */
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  font-size: 15px;
+  padding: 20px;
+  border-radius: 30px;
+  border-color: transparent;
+  font-family: 'Inconsolata', monospace;
+  text-decoration: none;
+  color: black;
+  /* box-shadow: inset -4px -4px 0px 0px rgb(177, 15, 47); */
+  /* width: 50px; */
+}
+
+
+
+.rating_input{
+  /* background: crimson; */
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  font-size: 15px;
+    padding: 20px;
+    border-radius: 30px;
+    border-color: transparent;
+    font-family: 'Inconsolata', monospace;
+    text-decoration: none;
+    color: black;
+    /* box-shadow: inset -4px -4px 0px 0px rgb(177, 15, 47); */
+    /* width: 50px; */  
+  }
+  
+  .released_input{
+    /* background: crimson; */
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    font-size: 15px;
+    padding: 20px;
+    border-radius: 30px;
+    border-color: transparent;
+    font-family: 'Inconsolata', monospace;
+    text-decoration: none;
+    color: black;
+    /* box-shadow: inset -4px -4px 0px 0px rgb(177, 15, 47); */
+    /* width: 50px; */
+    
+  }
+  
+  .desc_input{
+    /* background: crimson; */
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    font-size: 15px;
+    padding: 20px;
+    border-radius: 30px;
+    border-color: transparent;
+    font-family: 'Inconsolata', monospace;
+    text-decoration: none;
+    color: black;
+    /* box-shadow: inset -4px -4px 0px 0px rgb(177, 15, 47); */
+    /* width: 50px; */
+    
+  }
+  
+  .name_input{
+    /* background: crimson; */
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    font-size: 15px;
+    padding: 20px;
+    border-radius: 30px;
+    border-color: transparent;
+    font-family: 'Inconsolata', monospace;
+    text-decoration: none;
+    color: black;
+    /* box-shadow: inset -4px -4px 0px 0px rgb(177, 15, 47); */
+    /* width: 50px; */
+    
+  }
+  
+  .label_name{
+    background: crimson;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    font-size: 15px;
+    padding: 20px;
+    border-radius: 30px;
+    border-color: transparent;
+    font-family: 'Inconsolata', monospace;
+    text-decoration: none;
+    color: white;
+    box-shadow: inset -4px -4px 0px 0px rgb(177, 15, 47);
+    /* width: 50px; */
+  }
+  
+  .label_desc{
+    background: crimson;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    font-size: 15px;
+    padding: 20px;
+    border-radius: 30px;
+    border-color: transparent;
+    font-family: 'Inconsolata', monospace;
+    text-decoration: none;
+    color: white;
+    box-shadow: inset -4px -4px 0px 0px rgb(177, 15, 47);
+    /* bottom: 31px */
+  }
+  
+  .label_released{
+    background: crimson;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    font-size: 15px;
+    padding: 20px;
+    border-radius: 30px;
+    border-color: transparent;
+    font-family: 'Inconsolata', monospace;
+    text-decoration: none;
+    color: white;
+    box-shadow: inset -4px -4px 0px 0px rgb(177, 15, 47);
+  }
+  
+  .label_rating{
+    background: crimson;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    font-size: 15px;
+    padding: 20px;
+    border-radius: 30px;
+    border-color: transparent;
+    font-family: 'Inconsolata', monospace;
+    text-decoration: none;
+    color: white;
+    box-shadow: inset -4px -4px 0px 0px rgb(177, 15, 47);
+  }
+  
+  .label_img{
+    background: crimson;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    font-size: 15px;
+    padding: 20px;
+    border-radius: 30px;
+    border-color: transparent;
+    font-family: 'Inconsolata', monospace;
+    text-decoration: none;
+    color: white;
+    box-shadow: inset -4px -4px 0px 0px rgb(177, 15, 47);
+  }
+  
+  .genre_create{
+    display: grid;
+    margin: 5px;
+    justify-items: center;
+  }
+  
+  
+  
+  .genre_btn{
+    background: crimson;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    font-size: 15px;
+    padding: 20px;
+    border-radius: 30px;
+    border-color: transparent;
+    font-family: 'Inconsolata', monospace;
+    text-decoration: none;
+    color: white;
+    box-shadow: inset -4px -4px 0px 0px rgb(177, 15, 47);
+    /* width: 50px; */
+    cursor: pointer;
+    /* left: 260px; */
+  }
+  
+  
+  .delete_genres{
+    margin: 5px;
+    width: 5%;
+    display: grid;
+    background: crimson;
+      position: relative;
+      text-align: center;
+      font-size: 15px;
+      border-radius: 30px;
+      border-color: transparent;
+      font-family: 'Inconsolata', monospace;
+      text-decoration: none;
+      color: white;
+      box-shadow: inset -4px -4px 0px 0px rgb(177, 15, 47);
+    }
+  
+  .platform_create{
+    margin: 5px;
+    display: grid;
+    justify-items: center;
+  }
+  
+  .platform_btn{
+    background: crimson;
+    display: inline-block;
+  position: relative;
+  text-align: center;
+    font-size: 15px;
+    padding: 20px;
+    border-radius: 30px;
+    border-color: transparent;
+    font-family: 'Inconsolata', monospace;
+    text-decoration: none;
+    color: white;
+    box-shadow: inset -4px -4px 0px 0px rgb(177, 15, 47);
+    /* width: 50px; */
+    cursor: pointer;
+    /* left: 200px; */
+  }
+  
+  .delete_plat{
+    margin: 5px;
+    width: 5%;
+    display: grid;
+    background: crimson;
+      position: relative;
+      text-align: center;
+      font-size: 15px;
+      border-radius: 30px;
+      border-color: transparent;
+      font-family: 'Inconsolata', monospace;
+      text-decoration: none;
+      color: white;
+      box-shadow: inset -4px -4px 0px 0px rgb(177, 15, 47);
+      /* width: 50px; */
+  }
+  
+  
+  
+  
+  
+  
+  

@@ -1,0 +1,62 @@
+.detail_container{
+    background-image: url(https://1.bp.blogspot.com/-4egE2E5aF5M/Wvct17rpKNI/AAAAAAAAE_U/GukxutklTggqp4s1nb52JoTRiFiOLMEYwCLcBGAs/s1600/2d-video-game-bk-effect.3gif.gif);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.container_info_detail{
+    border-color: rgb(140, 130, 115);
+    background-color: rgb(103, 31, 80);
+    display: flex;
+    justify-content: center;
+    border: 1px solid #000;
+    z-index: 1;
+    margin: 10px;
+    background-color: #95dfa1;
+    /* opacity: .8; */
+    flex-direction: column;
+}
+
+.title_detail{
+    color: rgb(232, 230, 227);
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    display: block;
+    font-size: 30px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.img_detail{
+    border: 5px solid #000;
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px;
+    width: 600px;
+    height: 400px;
+    border-color: #000;
+    display: flex;
+    justify-content: center;
+    margin-left: 66vh;
+    opacity: 1;
+}
+
+.rel_detail{
+    color: rgb(232, 230, 227);
+    color: #000;
+    font-size: larger;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}

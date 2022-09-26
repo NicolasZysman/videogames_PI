@@ -1,0 +1,57 @@
+.paginado_info{
+    padding: .3em .7em;
+    justify-content: space-between;
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+
+.numero_paginado{
+    /* background-color: black;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: .3 ease-in-out;
+    margin-right: 2px;
+    margin-left: 2px;
+    max-width: 80px;
+    width: 50%;
+    border-color: white; */
+    background: #92CD41;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  font-size: 30px;
+  padding: 20px;
+  font-family: "Press Start 2P", cursive;
+  text-decoration: none;
+  color: white;
+  box-shadow: inset -4px -4px 0px 0px #4AA52E;
+}
+    
+
+
+.numero_paginado:hover{
+    background-color: greenyellow;
+    transform: translateY(-.5em);
+}
+
+/* .numero_paginado::before{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    bottom: -1;
+    height: 1;
+    background-color: black;
+    filter: blur(2px);
+    transition: .3s ease-in-out;
+} */
+
+.video-game-button:active, .start-btn:active {
+	box-shadow: none;
+	position: relative;
+	top: .2em;
+}
+
+
