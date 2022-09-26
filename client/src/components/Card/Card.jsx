@@ -28,5 +28,3 @@ export default function Card({ name, image, genres, rating, released}){
         </div>
     )
 }
-
-{/* genres).join(" | ") : genres.map(genres => genres.name).join(" | ") */}
