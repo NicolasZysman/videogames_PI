@@ -38,18 +38,11 @@ const getDbIdInfo = async (id) => {
     })
 }
 
-// const getAllVideogamesById = async () => {
-//     const apiIdInfo = await getApiIdInfo();
-//     const dbIdInfo = await getDbIdInfo();
-//     const info = apiIdInfo.concat(dbIdInfo);
-//     return info;
-// }
 
 async function videogamesByID(req, res){
     try{
         const { id } = req.params;
         if (isNaN(id)){
-            console.log("Pepe")
             const dbGame = await getDbIdInfo(id)
             if (dbGame){
                 let gameDb = await dbGame.filter((e) => e.id.toString() === id.toString())
@@ -65,10 +58,6 @@ async function videogamesByID(req, res){
     } catch(error){
         res.status(404).send(error)
     }
-    
-    // if (idGame || dbGame === undefined){
-    //     res.status(404).json({message: "No encontre el juego"})
-    // }
 }
 
 module.exports = { videogamesByID }

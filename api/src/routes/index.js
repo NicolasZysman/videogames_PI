@@ -10,8 +10,7 @@ const { getGenres } = require('../responses/genre');
 const { videogamesByID } = require('../responses/idVideogames');
 const { postVideogame } = require('../responses/postVideogame');
 const { getPlatforms } = require('../responses/platforms')
-// Configurar los routers
-// Ejemplo: router.use('/auth', authRouter);
+
 
 router.get('/videogames', getVideogames);
 router.get('/genres', getGenres);

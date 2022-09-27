@@ -6,7 +6,6 @@ const initialState = {
     genres: [],
     platforms: [],
     detail: [],
-    // isLoading: false,
     currentPage: 1
 }
 
@@ -26,12 +25,6 @@ function rootReducer(state = initialState, action) {
                 ...state,
                 videogames: action.payload
             }
-
-        // case 'IS_LOADING':
-        //     return{
-        //         ...state,
-        //         isLoading: action.payload
-        //     }
 
         case 'GET_DETAIL':
             return{

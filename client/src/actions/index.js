@@ -41,10 +41,6 @@ export function postVideogame(payload) {
     }
 }
 
-// export default getVideogamesDb (){
-
-// }
-
 export function getNameVideogames(name){
     return async function (dispatch) {
         try {
@@ -78,13 +74,6 @@ export function clearDetail(){
         type: 'CLEAR_DETAIL',
     }
 }
-
-// export function setIsLoading(){
-//     return ({
-//         type: 'IS_LOADING',
-//         payload: true
-//     })
-// }
 
 export function filterByRating(payload) {
     return {
