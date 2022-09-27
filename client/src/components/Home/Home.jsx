@@ -53,18 +53,27 @@ export default function Home () {
 
     return (
         <div className="home">
+            
             <button className="btn_0" onClick={e => {handleClick(e)}}></button>
+
             <SearchBar className="searchBar"/>
+            
             <div className="filters">
+
                 <select className="btn_1" onChange={ e => handleSortNames(e)}>
+                    <option value="" disabled selected>By Name</option>
                     <option value='A-Z'>A-Z</option>
                     <option value='Z-A'>Z-A</option>
                 </select>
+
                 <select className="btn_2" onChange={ e => handleSortRatings(e)}>
+                    <option value="" disabled selected>By Rating</option>
                     <option value='asc'>Ascendente</option>
                     <option value='desc'>Descendente</option>
                 </select>
+                
                 <select className="btn_3" onChange={ e => handleFilterGames(e)}>
+                    <option value="" disabled selected>Filter Games</option>
                     <option value='all'>All Videogames</option>
                     <option value='created'>Creados</option>
                     <option value='api'>Por Api</option>
@@ -107,7 +116,7 @@ export default function Home () {
             </div>
             
             <Link to='/videogame'>
-            <button className="create">Crear Videojuego</button>    
+                <button className="create">Crear Videojuego</button>    
             </Link>
             
 
