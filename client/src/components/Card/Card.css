@@ -23,6 +23,9 @@
   transform-style: preserve-3d;
 }
   
+.flip_card:hover{
+  cursor: pointer;
+}
 
 .flip_card:hover .flip_card_inner {
   transform: rotateY(180deg);
