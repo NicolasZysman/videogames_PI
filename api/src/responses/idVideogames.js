@@ -46,21 +46,26 @@ const getDbIdInfo = async (id) => {
 // }
 
 async function videogamesByID(req, res){
-    const { id } = req.params;
-    if (isNaN(id)){
-        console.log("Pepe")
-        const dbGame = await getDbIdInfo(id)
-        if (dbGame){
-            let gameDb = await dbGame.filter((e) => e.id.toString() === id.toString())
-            res.status(200).send(gameDb)
+    try{
+        const { id } = req.params;
+        if (isNaN(id)){
+            console.log("Pepe")
+            const dbGame = await getDbIdInfo(id)
+            if (dbGame){
+                let gameDb = await dbGame.filter((e) => e.id.toString() === id.toString())
+                res.status(200).send(gameDb)
+            }
+        } else{
+            const idGame = await getApiIdInfo(id)
+            if (idGame){
+                let gameId = await idGame.filter((e) => e.id.toString() === id.toString())
+                if(gameId.length > 0)res.status(200).send(gameId)
+            }
         }
-    } else{
-        const idGame = await getApiIdInfo(id)
-        if (idGame){
-            let gameId = await idGame.filter((e) => e.id.toString() === id.toString())
-            if(gameId.length > 0)res.status(200).send(gameId)
-        }
+    } catch(error){
+        res.status(404).send(error)
     }
+    
     // if (idGame || dbGame === undefined){
     //     res.status(404).json({message: "No encontre el juego"})
     // }
