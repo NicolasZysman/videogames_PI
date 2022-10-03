@@ -50,20 +50,15 @@ const getAllVideogames = async () => {
 }
 
 async function getVideogames(req,res){
-    try{
-        const name = req.query.name
-        let totalVideogames = await getAllVideogames();
-        if (name){
-            let videogameName = await totalVideogames.filter(v => v.name.toLowerCase().includes(name.toLowerCase()))
-            videogameName.length ? res.status(200).send(videogameName) :
-            res.status(404).send('No existe el videojuego ingresado');
-        } else {
-            res.status(200).send(totalVideogames)
-        }
-    } catch(error){
-        res.status(404).send(error)
+    const name = req.query.name
+    let totalVideogames = await getAllVideogames();
+    if (name){
+        let videogameName = await totalVideogames.filter(v => v.name.toLowerCase().includes(name.toLowerCase()))
+        videogameName.length ? res.status(200).send(videogameName) :
+        res.status(404).send('No existe el videojuego ingresado');
+    } else {
+        res.status(200).send(totalVideogames)
     }
-    
 }
 
 module.exports = {
